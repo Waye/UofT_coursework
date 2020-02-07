@@ -1,0 +1,6 @@
+/** WRITE YOUR TIPS IN THIS FILE **/
+1. It took me a long time to understand search.py work process, so please read waterjug.py first
+2. Understand the basic knowledge of search, otherwise this assignment is doom
+3. Many lookups steps, it is better if apply hash table
+4. to improve heuristic efficiency, think what is deadlock first, those cases really cost your time.
+5. Prepare for the assignment earlier, this is not the easy one....

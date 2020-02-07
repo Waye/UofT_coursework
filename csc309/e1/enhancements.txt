@@ -1,0 +1,11 @@
+I created another info section called "trends for you" to show most used hash tags in user account.
+This info section is made up with several list-tile sections and each list-tile section is formatted by class".list_tile",
+the whole
+info section is formatted by id"your_trending_info".
+The Section comes several px below section info card, I decided to use position absolute. Since, I found out if I did not use it,
+the section would come along after tweets by default and if that could happen, it is not the result I want.
+The ul elements in css file is overwritten to get rid of each ul's front bullet.
+The "span.hashtag" class  and "span.grey" are shown something we learned from class to enhance any span class with grey
+and span specification.
+
+

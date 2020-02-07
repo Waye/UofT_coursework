@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+ <head>
+ 	<meta charset="utf-8">
+    <title>Exercise 1: Twitter Layout</title>
+    <link rel="stylesheet" type="text/css" href="e1_style.css">
+ </head>
+
+ <body>
+ 	
+ 	<!-- The header -->
+ 	<div id="header">
+ 		<!-- Twitter logo goes in here -->
+		<div><img class="birdLogo" src="bird.png"></div>
+		<!--<div><img class="birdLogo" src="bird.png"></div>-->
+		<!--<div><img class="birdLogo" src="bird.png"></div>-->
+		<!--<div><img class="birdLogo" src="bird.png"></div>-->
+		<!--<div><img class="birdLogo" src="bird.png"></div>-->
+
+
+ 		
+ 	</div>
+
+	<!-- The big banner image -->
+ 	<div id="banner"> <!-- Just holds the banner image, don't need to style this div. -->
+
+ 		<!-- Banner image goes in here -->
+
+		<div><img class="bannerPic" src="uoft_banner.jpeg"></div>
+
+ 	</div>
+
+ 	<div id="profileStats">
+ 		<ul>
+ 			<!-- Style the list element: Label and number -->
+ 			<li>Tweets<br><span class="profileStatsNumber">478</span></li>
+
+ 			<!-- Add the rest of the stats below -->
+			<li>Followers<br><span class="profileStatsNumber">23K</span></li>
+			<li>Following<br><span class="profileStatsNumber">12</span></li>
+			<li>Likes<br><span class="profileStatsNumber">10.3K</span></li>
+
+ 		</ul>
+ 	</div>
+
+ 	<!-- The Profile Info Section -->
+ 	<div id="profileInfo">
+ 		<h2>University of Toronto</h2>
+ 		<p class="grey">@UofT</p>
+ 		<p>
+ 			Connect with Canada's top university and one of the world’s strongest academic and research powerhouses. Find the latest news & events @uoftnews. #UofT
+		</p>
+ 	</div>
+
+
+
+ 	<!-- The Timeline Section -->
+ 	<div id='timeline'>
+
+ 		<div class='timelineHeader'>
+ 			<ul>
+	 			<li><a href="">Tweets</a></li>
+	 			<li><a href="">Tweets & Replies</a></li>
+ 			</ul>
+ 		</div>
+
+ 		<!-- First tweet -->
+ 		<div class='tweet timelineHeader' >
+ 			<!-- Put the tweet icon and content in this div.
+ 			You should have two divs inside this div: one that is a container for the tweet icon,
+ 			and one that has the content of the tweet.
+ 			Remember to look in the starter CSS for appropriate class names that 
+ 			match these descriptions. -->
+			<div class='tweetIconContainer'> <img class='tweetIcon'src="uoft.jpg"></div>
+			<div class='tweetContent'>
+
+				<p><span class="large-bold" >University of Toronto</span> <span class="grey">@UofT</span></p>
+				<p>Another great day at UofT! <span class="hashtag">#UofT #GreatDay</span> </p>
+
+
+			</div>
+
+ 		</div>
+
+ 		<!-- Second tweet -->
+ 		<div class='tweet timelineHeader'>
+ 			<!-- Reuse all of the tweet classes from the one above, 
+ 			and just change the content of the tweet. -->
+
+			<div class='tweetIconContainer'> <img class='tweetIcon'src="uoft.jpg"></div>
+			<div class='tweetContent'>
+
+				<p><span class="large-bold" >University of Toronto</span> <span class="grey">@UofT</span></p>
+				<p>Check out some books at<span class="hashtag"> #robarts</span> </p>
+				<p><img class="tweetContentPicture" src="robarts.jpg"></p>
+
+			</div>
+
+ 		</div>
+
+		<!-- Add your own tweet below -->
+		<div class='tweet timelineHeader'>
+			<!-- Reuse all of the tweet classes from the one above,
+            and just change the content of the tweet. -->
+
+			<div class='tweetIconContainer'> <img class='tweetIcon'src="uoft.jpg"></div>
+			<div class='tweetContent'>
+
+				<p><span class="large-bold" >University of Toronto</span> <span class="grey">@UofT</span></p>
+				<p><span class="hashtag">#UofT </span> is proud to host<br> the <span class="grey">@timeshighered</span>
+					World Academic Summit in 2020.<br></p>
+				<p><img class="tweetContentPicture" src="summit.jpg"></p>
+
+			</div>
+
+		</div>
+
+
+
+
+ 	</div>
+
+
+	<!-- profile image-->
+	<img id="bigProfilePicCircle"src="uoft.jpg">
+
+
+	<!--Your trending-->
+	<div id="your_trending_info">
+		<ul>
+			<!-- a single trending information -->
+			<li><span class="large-bold">Trends for you</span>  <a href=" " class="hashtag">change</a> </li>
+
+			<!-- Add the rest of the stats below -->
+			<li class="list_tile"><span class="hashtag">#UofT</span><br>  10.3K twitter</li>
+			<li class="list_tile"><span class="hashtag">#Robart</span><br>  5.6K twitter</li>
+			<li class="list_tile"><span class="hashtag">#Boundless</span><br>  56.2K twitter</li>
+			<li class="list_tile"><span class="hashtag">#Innovation</span><br>  56.2K twitter</li>
+			<li class="list_tile"><span class="hashtag">#Tuition</span><br>  23.2K twitter</li>
+			<li class="list_tile"><span class="hashtag">#Compute Science Tough</span><br>  100.2K twitter</li>
+			<li class="list_tile"><span class="hashtag">#World Class</span><br>  14.2K twitter</li>
+			<li class="list_tile"><span class="hashtag">#School Close</span><br>  200.2K twitter</li>
+		</ul>
+
+	</div>
+
+ </body>
+</html>

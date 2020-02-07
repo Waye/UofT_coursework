@@ -1,0 +1,11 @@
+promise() can be done some works that we don't know when the function is done
+fetch picture from server
+you can only call reject and resolve only once(but put in to if else )
+
+promise.all().then(data # this is parameter=>{})
+
+promise higher priority queue than set time out if they both happen instantaneously
+
+once resolve you pump up priority
+
+compare timeout 

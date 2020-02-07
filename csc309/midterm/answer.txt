@@ -1,0 +1,157 @@
+Q1:
+T
+F
+T
+F
+F
+F
+
+Q2:
+1
+Error, c is const
+3
+5
+
+Q3:
+'use strict';
+function Account()
+{ this.balance = 0; }
+
+Account.prototype= {
+    buyWithCard: function(amount) {
+        if (this.balance >= amount)
+        { this.balance -= amount; console.log('All good.'); }
+        else { console.log('Not enough money!'); } },
+
+    showBalance: function(){
+        console.log(this.balance);
+    },
+
+    addToBalance: function(amount){
+        this.balance +=amount;
+    },
+
+
+}
+const myAcc = new Account();
+myAcc.showBalance();
+myAcc.addToBalance(30);
+myAcc.showBalance();
+myAcc.buyWithCard(20);
+myAcc.showBalance();
+myAcc.buyWithCard(50);
+const yourAcc = new Account(); myAcc.buyWithCard.bind(yourAcc)(5);
+// ----end of accounts.js------------------------------------------------------------------------
+//     JavaScript Console below---
+// <accounts.js is run>
+// > const myAcc = new Account();
+// > myAcc.showBalance();
+// 0
+// > myAcc.addToBalance(30);
+// > myAcc.showBalance();
+// 30
+// > myAcc.buyWithCard(20);
+// All good
+// > myAcc.showBalance();
+// 10
+// > myAcc.buyWithCard(50);
+// Not enough money!
+// > const yourAcc = new Account();
+// myAcc.buyWithCard.bind(yourAcc)(5);
+// Not enough money!
+
+Q4:
+a.bar 0 5
+b.
+1.function foo0() { console.log(0); }
+2.function foo5() { console.log(5); }
+3.setTimeout(foo5, 5000); // 5000 milliseconds = 5 seconds
+4.setTimeout(foo0, 0);
+5.console.log('bar');
+
+push line 3 to stack
+push line 4 to stack
+push line 5 to stack
+call back foo0 from callback queue and push line 1 to stack push "console.log(0);" to stack
+call back foo5 from callback queue and push line 2 to stack push "console.log(5);" to stack
+
+Q5:
+test.js
+===========================
+'use strict';
+
+
+const form = document.querySelector('#tweetForm');
+const timeline = document.querySelector('#timeline');
+form.children[2].addEventListener ('click',addTweet);
+
+function addTweet(e) {
+    if (e.target.classList.contains( "tweetButton")) {
+        const textInput =document.querySelector('#tweetInput');
+        if (textInput.value.length <= 5) {
+            const tweet = makeTweet(textInput.value);
+            timeline.appendChild(tweet);
+        } else {
+
+            const error = makeErrorMessage();
+            form.appendChild(error);
+        }
+    }
+}
+function makeTweet(tweetText) {
+    const tweet = document.createElement('div');
+    tweet.className = 'tweet'
+    const img = document.createElement('img');
+    img.setAttribute("haha","midterm/test.html:9");
+    const text =
+        document.createTextNode(document.querySelector('#tweetInput').value)
+    tweet.appendChild(img);
+    tweet.appendChild(text);
+    return tweet;
+}
+function makeErrorMessage() {
+    const error = document.createElement('div');
+    error.className='errorMessage';
+    const errorspan= document.createElement('span');
+    errorspan.appendChild(document.createTextNode('Max 280 characters.'));
+    error.appendChild(errorspan);
+    return error;
+
+
+
+
+
+
+
+
+
+
+test.html
+===============================
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id='tweetForm'>
+    <img id='pic' src='profilepic.png'>
+    <input id='tweetInput' type='text' placeholder='Write something here...'>
+    <button class='tweetButton'>Tweet</button>
+</div>
+
+<div id='timeline'>
+    <!--<div class='tweet'>-->
+        <!--<img src='profilepic.png'>-->
+        <!--Tweet text here.-->
+    <!--</div>-->
+</div>
+
+<!--<div id='errorMessage'>-->
+    <!--<span>Max 280 characters.</span>-->
+<!--</div>-->
+
+</body>
+<script src="test.js" type="text/javascript"></script>
+</html>

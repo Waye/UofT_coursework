@@ -1,0 +1,54 @@
+json
+-you cannot add several info into whole json file, you have overwrite whole json file.
+
+-fs.async will catch reading error by it self, not sync fs
+
+create objects from json file
+-list
+passes a test into filter function(student.year===third year), choose only third year student
+
+-map
+
+-arrow functions
+const squareA=(x) => x*x
+const squareSix=() => 6*6
+(along with filter)
+
+--be careful with arrow function, since arrow function does not bind with 'this'
+
+const s={
+    name: 'Jimmy',
+    sayName: () => log(this.name)
+}
+
+s.sayName();//undefined
+
+
+-more generic functional array method: reduce()
+
+
+const totalBalance = accounts.reduce((total,account)=>{
+    log(total)// out put
+    return total = account.balance
+},0)// parameter you add into map or list
+
+log(totalBalance)
+
+'0',start at the end of the first interation
+
+assign to total in next iteration.
+0 5 15 12 12
+
+from MDN:
+The reduce() method executes a reducer function (that you provide) on each member of the array resulting in a single output value.
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+// 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer));
+// expected output: 10
+
+// 5 + 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer, 5));
+// expected output: 15
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce

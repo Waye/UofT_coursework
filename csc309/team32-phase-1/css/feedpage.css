@@ -1,0 +1,30 @@
+body {
+    font-family: 'Roboto';
+}
+
+.product {
+    min-height: 200px;
+}
+
+.product img {
+    max-height: 200px;
+    max-width: 100px;
+    object-fit: scale-down;
+    /* max-width: 100px; */
+}
+
+.order img {
+    /* width: auto; */
+    /* max-width: 100px; */
+    width: 100px;
+    object-fit: scale-down;
+}
+
+img.avatar {
+    width: 80px;
+}
+
+.sticky-offset {
+    top: 5em!important;
+    z-index: 900!important;
+}

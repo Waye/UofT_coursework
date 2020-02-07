@@ -1,0 +1,22 @@
+.inline {
+    display: inline-block;
+}
+
+.light {
+    background-color: lightgrey;
+}
+
+button {
+    width: 70px;
+}
+
+/* #container-fluid {
+    min-width: 1000px !important;
+}
+
+#headerSection {
+    min-width: 1000px;
+}
+body {
+    min-width: 1000px;
+} */

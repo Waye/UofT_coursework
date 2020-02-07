@@ -1,0 +1,255 @@
+/*** Exercise 1: Twitter CSS ***/
+
+/*
+#### You should not have to change the given property values. ###
+*/
+
+
+/*** Completed body style below ***/
+body {
+	background-color: #e6ecf0;
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/*** Removes default style from links ***/
+a {
+ 	text-decoration: none;
+ 	color: black;
+}
+
+/***********************************************
+********** Add to the selectors below **********
+************************************************/
+
+/* You only need to add where it says "Add properties below" */
+
+
+/*** Header and banner styles below ***/
+
+#header {
+	padding: 5px;
+	background-color: white;
+
+}
+
+.birdLogo {
+
+	/* Add properties below */
+	width: 30px;
+	margin-left: 40px;
+	height:auto ;
+	display: inline;
+
+	background-color: white;
+
+}
+
+.bannerPic {
+	display: block;
+	width: 100%;
+	/* I think better let width 1500px, height 500px*/
+	/*width: 1500px;*/
+
+	/* Add properties below */
+	height: 300px;
+	background-color: white;
+	
+}
+
+
+/*** Profile Statistics Bar styles below ***/
+
+#profileStats {
+	padding: 5px;
+	background-color: white;
+
+}
+
+#profileStats ul {
+	padding: 3px;
+	
+	/* Add properties below */
+	margin: 0px 0px 0px 390px;
+}
+
+#profileStats ul li {
+	margin-right: 20px;
+	font-weight: bold;
+	list-style: none; /* Gets rid of list bullet points */
+	text-align: center;
+	
+	/* Add a proper display property: We want the stats to have 
+	a height, but also appear side-by-side */
+
+	/*display: ;*/
+	display: inline-block;
+}
+
+.profileStatsNumber {
+	display: block;
+	
+	/* Add properties below */
+	font-size: 150%;
+
+}
+
+
+/*** Profile info box styles below ***/
+
+#profileInfo {
+	background-color: white;
+	padding: 10px;
+	
+	/* Add properties below */
+	margin-top: 20px;
+	margin-left: 50px;
+	width: 300px;
+	min-height: 300px ;
+	float:left;
+
+}
+
+
+/*** Timeline styles below ***/
+
+#timeline {
+	border-radius: 10px;
+	background-color: white;
+
+	/* Add properties below */
+	margin-top: 20px;
+	margin-left: 390px;
+	width: 600px;
+
+
+}
+
+.timelineHeader {
+	border-bottom: 1px solid grey;
+
+}
+
+
+.timelineHeader ul {
+	margin: 0px;
+}
+
+.timelineHeader ul li {
+	padding: 10px;
+	margin-right: 20px;
+	font-size: 150%;
+	font-weight: bold;
+
+	/* Add properties below */
+	display: inline-block;
+	
+
+}
+
+
+/*** Tweet styles below ***/
+
+.tweet {
+	background-color: white;
+	
+	/* Add properties below */
+
+	overflow: auto;
+}
+
+/* For the div that holds the tweet icon */
+.tweetIconContainer {
+
+	/* Add properties below */
+	float: left;
+	width: 80px;
+}
+
+.tweetIcon {
+
+	/* Add properties below */
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	margin: 10px;
+}
+
+.tweetContent {
+	margin: 0px;
+
+	/* Add properties below */
+	float:left;
+
+
+}
+
+
+/* For pictures inside tweets (like the Robarts pic) */
+.tweetContentPicture {
+	/* Add properties below */
+	max-width: 500px;
+}
+
+
+/* Style the big profile picture circle here. */
+#bigProfilePicCircle {
+	/* Add properties below */
+	top: 230px;
+	left: 100px;
+	width: 200px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 50%;
+	position: absolute;
+}
+
+
+/** Some font color classes for you to use. **/
+.grey {
+	color: grey;
+}
+
+
+.hashtag {
+	color: #5088e9;
+}
+
+/* add extra features for @handle and User-name */
+span.grey{
+	font-weight: bold;
+}
+
+.large-bold{
+	font-size: larger;
+	font-weight: bold;
+}
+
+/*enhancement css*/
+#your_trending_info{
+	background-color: white;
+	padding: 10px;
+
+	/* Add properties below */
+	top: 750px;
+	left:50px;
+	width: 300px;
+	min-height: 300px ;
+	position: absolute;
+
+}
+ul {
+	list-style-type: none;
+}
+
+.list_tile{
+	margin: 20px 20px 20px 20px;
+}
+
+span.hashtag{
+	font-size: large;
+	font-weight: bold;
+}
+
+
+
