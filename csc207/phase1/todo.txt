@@ -1,0 +1,4 @@
+1.UML initiation @Weiyi Hu
+2.JavaFX UI @Zonggen Bai
+3.username class @liwen zhuang
+4.Reconstruct the Data Structure in ImageController and Image @Zonggen Bai

@@ -1,0 +1,39 @@
+IDE version:
+- Please make "/src" as the source folder
+- Application start point is "image_manager.Main"
+---------------------------------------------------------
+Command line version:
+- Please navigate to /src folder
+- Compile and run the .java files using:
+        javac image_manager/Main.java
+        javac controller/*.java
+        javac model/*.java
+        java image_manager.Main
+----------------------------------------------------------
+User Manual:
+1. Choose a directory, and click checkbox if need to search for images under all subdirectories.
+
+2. Click on specific image if need to browse individually.
+   Note: When viewing the images, there is an option that allow users to view all images under current existing tags.
+
+3. Move button:
+   Move to the specified directory
+        SPECIAL NOTE:
+        - CASE 1: if check box is not clicked in step#1 (do not search subdirectories), move the image to any directories
+                  other than current one will resulting in losing track of the image in our program,
+                  because we no longer have interest in the image that is not in the specified directory.
+        - CASE 2: if check box is clicked in step#1 (search for subdirectories), move the image to any directories
+                  other than current one or subdirectories of it will resulting in losing track of the image in our program,
+                  because we no longer have interest in the image that is not in the scope of our program.
+
+4. Image Info Button:
+   Pops out another window that displays all of the tag information as well as name history.
+
+5. Please enter the tag you want to add/delete manually by keyboard and click Add/Delete.
+   For adding currently existing tags, you can select multiple tags by pressing Command(Mac OS)/Control(Windows, Linux).
+
+6. Current Folder Button:
+   Opens (directly in their OS's file viewer) the directory containing the current image file.
+   
+7. When viewing name history, please select the old name and click the button.
+

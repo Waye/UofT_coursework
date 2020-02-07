@@ -1,0 +1,17 @@
+IDE Version:
+- Please make "/src" as the source folder
+- Application start point is "image_manager.Main"
+
+Command line version:
+- Please navigate to /src folder
+- Compile and run the .java files using:
+
+javac image_manager/Main.java
+javac controller/*.java
+javac model/*.java
+
+java image_manager.Main
+
+- Note:
+- Please enter the tag you want to add/delete manually by keyboard and click Add/Delete.
+- For choosing currently existing tags, you can select multiple tags by pressing Command(Mac OS)/Control(Windows, Linux).

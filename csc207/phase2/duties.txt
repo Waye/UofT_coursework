@@ -1,0 +1,11 @@
+Each group member should describe what they contributed to phase 1 in 100 words or less. Bullet points are fine.
+
+@Zonggen Bai
+- Implements Observer Pattern between MainController and StatusObserver
+- UI adjustment according to phase1 feedback
+- Fixes bugs inherited from phase1
+
+@Weiyi Hu
+-Implements unit test for imageFinder
+-remove useless code from phase1
+-create UML design pattern file

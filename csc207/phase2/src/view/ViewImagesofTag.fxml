@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:id="Mainpane" fx:controller="controller.SortImagesByTagsController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane fx:id="scrollPaneImage" layoutX="2.0" layoutY="2.0" prefHeight="699.0" prefWidth="387.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="scrollPaneList" layoutX="403.0" layoutY="12.0" prefHeight="353.0" prefWidth="241.0">
+         <content>
+            <ListView fx:id="taglistview" onMouseClicked="#handleListview" prefHeight="349.0" prefWidth="218.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>

@@ -1,0 +1,11 @@
+Each group member should describe what they contributed to phase 1 in 100 words or less. Bullet points are fine.
+
+@Zonggen Bai:
+- JavaFx GUI
+- Draft CRC Cards
+- Construct fundamental data structure for controller and model files
+
+@Weiyi Hu
+-user account login,reset,delete,register UI
+-Model user setup
+-user Controller setup

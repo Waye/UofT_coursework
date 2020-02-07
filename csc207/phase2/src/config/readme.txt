@@ -1,0 +1,1 @@
+This config folder is for command line version.
